@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<h1>Crear Persona</h1>
+<h:form>
+<h:panelGrid columns="3">
+
+<h:outputLabel value="Cedula:" for="cedula"/>
+<h:inputText value="#{personaControlador.persona.cedula}" id="cedula" />
+<h:message for="cedula"/>
+
+<h:outputLabel value="Nombres:" for="nombres"/>
+<h:inputText value="#{personaControlador.persona.nombre}" id="nombres" />
+<h:message for="nombres"/>
+
+<h:outputLabel value="Email:" for="email"/>
+<h:inputText value="#{personaControlador.persona.email}" id="email" />
+<h:message for="email"/>
+
+<h:outputLabel value="Fecha Nacimiento:" for="fecha"/>
+<h:inputText value="#{personaControlador.persona.fechaNa}" id="fecha" >
+	<f:convertDateTime pattern="dd/MM/yyyy" />
+</h:inputText>
+<h:message for="fecha"/>
+
+<h:commandButton action="#{personaControlador.Guardar()}" value="GUARDAR" />
+
+</h:panelGrid>
+</h:form>
+</body> 
+</html>
