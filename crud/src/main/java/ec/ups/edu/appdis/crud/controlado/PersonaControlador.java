@@ -32,7 +32,7 @@ public String Guardar(){
 	
 	System.out.println(persona);
 	//invoque al DAO
-	System.out.println("hola mundo");
+	System.out.println("hola muno");
 		pdao.Insertar(persona);
 	return null;
 }
