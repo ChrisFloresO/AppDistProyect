@@ -39,6 +39,8 @@ public String Guardar(){
 	int x=0;
 	int y=0;
 	int z=0;
+	int xx = 0;
+	System.out.println(xx);
 }
 
 }
